@@ -15,6 +15,14 @@
     - setGravity()
 
 ## build 방법 
+
+- 실습 코드 git clone
+```
+> mkdir ~/project
+> cd ~/project
+> git clone https://github.com/Jaeeunykim/Gazebo_Practice.git
+```
+
 - build 디렉토리 생성
 ```bash
 > cd ~/projects/Gazebo_Practice/2.zero_gravity_world_plugin
