@@ -21,13 +21,15 @@
 > make
 ```
 ## 환경변수 설정
+- export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PX4_Simulation}/demo/velodyne_plugin/build
 ```bash
-> export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PX4_Simulation}/demo/velodyne_plugin/build
-
 > export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)
 ```
 ## 실행 
 ```bash
-> gazebo --verbose ../velodyne.world
+> cd ~/projects/Gazebo_Practice/3.velodyne_plugin
+> gazebo --verbose ./velodyne.world
 > ./vel 3  (new terminal)
 ```
+
+## 결과 

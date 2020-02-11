@@ -1,6 +1,13 @@
 # 무중력 world plugin 구현
 
+## 목표
+- gazebo api 사용 및 world property 값 적용
+
 ## Gazebo GUI로 무중력 world 만들기
+
+- 결과 
+![](./result_image.png)
+
 - Gazebo 실행
 ```
 > gazebo
@@ -9,10 +16,15 @@
     - World tap > Physics > gravity   
 ![](./gui_physics.png)
 
-## 구현
+
+
+## 코드로 무중력 world 구현하기 
 - [Gazebo World Class API 참조](https://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgazebo_1_1physics_1_1World.html#details)
 - Load 함수 
     - setGravity()
+
+## Todo 구현하기 
+- zero_gravity.cpp
 
 ## build 방법 
 
@@ -42,6 +54,3 @@
 ```bash
 > gazebo --verbose ../gravity.world
 ```
-
-## 테스트
-- cylider model 삽입 하여 z축 값 바꿔보기 
