@@ -7,6 +7,7 @@
 ## build 방법 
 - build 디렉토리 생성
 ```bash
+> cd ~/projects/Gazebo_Practice/1.hello_plugin/
 > mkdir build 
 ```    
 - Plugin 빌드

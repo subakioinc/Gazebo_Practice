@@ -1,12 +1,12 @@
 # 무중력 world plugin 구현
 
-## Gazebo GUI로 무중력 설정 하기
+## Gazebo GUI로 무중력 world 만들기
 - Gazebo 실행
 ```
 > gazebo
 ```
 - gravity 값 바꾸기 
-    - World tap > Pysics > gravity 
+    - World tap > Physics > gravity   
 ![](./gui_physics.png)
 
 ## 구현
@@ -17,6 +17,7 @@
 ## build 방법 
 - build 디렉토리 생성
 ```bash
+> cd ~/projects/Gazebo_Practice/2.zero_gravity_world_plugin
 > mkdir build 
 ```    
 - Plugin 빌드

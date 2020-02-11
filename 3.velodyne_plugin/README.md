@@ -4,6 +4,7 @@
 
 - build 디렉토리 생성
 ```bash
+> cd ~/projects/Gazebo_Practice/3.velodyne_plugin
 > mkdir build 
 ```    
 - Plugin 빌드
