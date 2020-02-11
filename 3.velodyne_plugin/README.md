@@ -1,5 +1,8 @@
 # Velodyne sensor 속도 조절 plugin 구현
 
+## 목표 
+- gazebo pub/sub 구조 익히기 
+
 ## build 방법 
 
 - 실습 코드 git clone
@@ -32,4 +35,5 @@
 > ./vel 3  (new terminal)
 ```
 
-## 결과 
+## 구조
+- [참조](https://docs.google.com/presentation/d/11C3PVAzqHK14ZM_cgx_pS-CnYFGBnMZJrMPDjCvj8r4/edit#slide=id.p) 
