@@ -16,7 +16,7 @@
     - World tap > Physics > gravity   
 ![](./gui_physics.png)
 
-
+----
 
 ## 코드로 무중력 world 구현하기 
 - [Gazebo World Class API 참조](https://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgazebo_1_1physics_1_1World.html#details)
@@ -25,6 +25,7 @@
 
 ## Todo 구현하기 
 - zero_gravity.cpp
+- CMakeLists.txt 
 
 ## build 방법 
 
