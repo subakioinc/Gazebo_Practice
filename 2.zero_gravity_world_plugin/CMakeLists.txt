@@ -5,5 +5,9 @@ include_directories(${GAZEBO_INCLUDE_DIRS})
 link_directories(${GAZEBO_LIBRARY_DIRS})
 list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 
+#Todo2
+# add_library(... SHARED ...)
+# target_link_libraries(... ${GAZEBO_LIBRARIES})
+
 add_library(zero_gravity SHARED zero_gravity.cpp)
 target_link_libraries(zero_gravity ${GAZEBO_LIBRARIES})
