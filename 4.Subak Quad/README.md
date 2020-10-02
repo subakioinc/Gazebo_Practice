@@ -18,7 +18,7 @@ Custom 비행체가 있는 경우 PX4 SITL에 추가하여 사용하기
 ## Airframe 추가 
 - 위치 : Firmware/ROMFS/px4fmu_common/init.d-posix/airframes
 - 추가 :
-  - 1014_solo 파일 --> 1014_solo로 변경
+  - 1014_solo 파일 --> 1014_subak 변경
   - CMakeLists.txt --> 1014_solo 추가
   
 ## Build target 추가 
