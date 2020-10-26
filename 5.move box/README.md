@@ -1,8 +1,7 @@
 # Move Box Plugin
 
 ## 목표 
-- Model Plugin 구현 및 빌드 방법 익히기
-- Message Publish를 통한 model 제어 구현
+-  box(link)의 x좌표를 증가 시켜 움직이는 효과를 만드는 플러그인 구현 
 
 ## move_box 디렉토리 생성 
 
