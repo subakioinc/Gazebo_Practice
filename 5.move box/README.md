@@ -47,6 +47,5 @@
   ```
 - model element 내에 plugin 추가
   - model name ='unit_box'
-  - 추가 sdf :
-    <plugin name="move_box" filename="libmove_box.so"/>
+  - 추가 sdf :<plugin name="move_box" filename="libmove_box.so"/>
 
