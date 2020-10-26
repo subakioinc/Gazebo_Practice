@@ -4,35 +4,28 @@
 - Model Plugin 구현 및 빌드 방법 익히기
 - Message Publish를 통한 model 제어 구현
 
-## build 방법 
-  ```bash
-   > mkdir ~/project/moveBox
-   > cd ~/project/moveBox
-  ```
-- CMakeLists.txt 생성 
-  ```txt
-  cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+## move_box 디렉토리 생성 
 
-  find_package(gazebo REQUIRED)
-  include_directories(${GAZEBO_INCLUDE_DIRS})
-  link_directories(${GAZEBO_LIBRARY_DIRS})
-  list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
-
-  add_library(move_box SHARED move_box.cpp)
-  target_link_libraries(move_box ${GAZEBO_LIBRARIES})
+```bash
+ > mkdir ~/project/moveBox
+ > cd ~/project/moveBox
   ```
+- [CMakeLists.txt](./CMakeLists.txt)
+- [move_box.cpp](./move_box.cpp)
+
+## 빌드 방법 
 - build 디렉토리 생성
   ```bash
   > cd ~/project/moveBox/
   > mkdir build
   ```
-- build 
+- 빌드 
   ```bash
   > cd build
   > cmake ..
   > make
   ```
-- Plugin Path 추가 
+## Plugin path 추가 
   ```bash
   > export GAZEBO_PLUGIN_PATH=$HOME/project/moveBox/build:$GAZEBO_PLUGIN_PATH
   ```
