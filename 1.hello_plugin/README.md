@@ -1,17 +1,17 @@
 # Hello world Plugin
 
 ## 목표
-- Plugin 빌드 
-- Plugin 소스 구조 파악 
+- plugin의 기본 코드 구조 파악
+
+## 디렉토리 생성 
+```
+> mkdir ~/projects/hello_plugin
+> cd ~/project
+```
+- [CMakeLists.txt](./CMakeLists.txt) 생성
+- [hello_world.cpp](./hello_world.cpp) 생성
 
 ## build 방법 
-- 실습 코드 git clone
-```
-> mkdir ~/project
-> cd ~/project
-> git clone https://github.com/Jaeeunykim/Gazebo_Practice.git
-```
-
 - build 디렉토리 생성
 ```bash
 > cd ~/projects/Gazebo_Practice/1.hello_plugin/
@@ -25,6 +25,7 @@
 ```
 ## 환경변수 설정
 - export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PX4_Simulation}/demo/velodyne_plugin/build
+ export GAZEBO_PLUGIN_PATH=$HOME/projects/Gazebo_Practice/1.hello_plugin/build:$GAZEBO_PLUGIN_PATH 
 ```bash
 > export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)
 ```
