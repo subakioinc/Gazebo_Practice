@@ -7,7 +7,7 @@
 
 namespace gazebo 
 {
-    class MoveBoxPlugin : public ModelPlugin
+    class StopBoxPlugin : public ModelPlugin
     {
         public: void Load(physics::ModelPtr _parent, sdf::ElementPtr)
         {
@@ -23,11 +23,11 @@ namespace gazebo
             stop = 0;       
 
             // update이벤트를 듣는다. 이 이벤트는 시물레이션의 iteration마다 broadcast 한다 
-            this->updateConnection = event::Events::ConnectWorldUpdateBegin(std::bind(&MoveBoxPlugin::OnUpdate, this));
+            this->updateConnection = event::Events::ConnectWorldUpdateBegin(std::bind(&StopBoxPlugin::OnUpdate, this));
 
             std::string topicName = "~/"+ this->model->GetName() + "/stop";
 
-            this->sub = this->node->Subscribe(topicName, &MoveBoxPlugin::OnMsg, this);
+            this->sub = this->node->Subscribe(topicName, &StopBoxPlugin::OnMsg, this);
         }
         
         // World의 update 이벤트가 시작되면 호출된다
@@ -73,5 +73,5 @@ namespace gazebo
         private: transport::SubscriberPtr sub;
     };
     // 이 플러그인을 시물레이션 등록 
-    GZ_REGISTER_MODEL_PLUGIN(MoveBoxPlugin)
+    GZ_REGISTER_MODEL_PLUGIN(StopBoxPlugin)
 }
