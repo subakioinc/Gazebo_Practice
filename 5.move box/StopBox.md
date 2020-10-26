@@ -51,7 +51,7 @@
   ```xml
    <plugin name="stop_box" filename="libstop_box.so"/>
   ```
-  ![](./boxWorldSDF.png)
+  ![](./stopbox.png)
 
 ## box world 실행 
   ```bash
