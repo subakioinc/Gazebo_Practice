@@ -24,37 +24,26 @@
 - Load 함수 
     - setGravity()
 
+## 디렉토리 생성 
+```bash
+> cd ~/projects/zero_gravity
+```    
 ## Todo 구현하기 
 - zero_gravity.cpp
-- CMakeLists.txt 
+- CMakeLists.txt  
 
 ## build 방법 
-
-- 실습 코드 git clone
-```
-> mkdir ~/project
-> cd ~/project
-> git clone https://github.com/Jaeeunykim/Gazebo_Practice.git
-```
-
-- build 디렉토리 생성
-```bash
-> cd ~/projects/Gazebo_Practice/2.zero_gravity_world_plugin
-> mkdir build 
-```    
-- Plugin 빌드
 ```bash
 > cd build
 > cmake ..
 > make
 ```
 ## 환경변수 설정
-- export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PX4_Simulation}/demo/velodyne_plugin/build
 ```bash
-> export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)
+> export GAZEBO_PLUGIN_PATH=$HOME/projects/zero_gravity/build:$GAZEBO_PLUGIN_PATH 
 ```
 
 ## 실행 
 ```bash
-> gazebo --verbose ../gravity.world
+> gazebo ./gravity.world
 ```
