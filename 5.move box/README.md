@@ -37,6 +37,7 @@
 - Box link 추가 
 - box.world 형태로 저장 
   - 저장 위치 : ~/projects/Gazebo_Practice/5.move box/
+  ![](./boxWorld.png)
 
 ## world 파일에 플러그인 추가하기 
 
@@ -51,4 +52,5 @@
   ```xml
    <plugin name="move_box" filename="libmove_box.so"/>
   ```
+  ![](./boxWorldSDF.png)
 
