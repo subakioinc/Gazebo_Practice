@@ -5,16 +5,14 @@
 - Message Publish를 통한 model 제어 구현
 
 ## build 방법 
-- 실습 코드 git clone
   ```bash
-  > mkdir ~/project
-  > cd ~/project
-  > git clone https://github.com/Jaeeunykim/Gazebo_Practice.git
+   > mkdir ~/project/moveBox
+   > cd ~/project/moveBox
   ```
-
+- CMakeLists.txt 생성 
 - build 디렉토리 생성
   ```bash
-  > cd ~/projects/Gazebo_Practice/5.move box/
+  > cd ~/project/moveBox/
   > mkdir build
   ```
 - build 
@@ -25,7 +23,7 @@
   ```
 - Plugin Path 추가 
   ```bash
-  > export GAZEBO_PLUGIN_PATH=$HOME/projects/Gazebo_Practice/5.move box/build:$GAZEBO_PLUGIN_PATH
+  > export GAZEBO_PLUGIN_PATH=$HOME/project/moveBox/build:$GAZEBO_PLUGIN_PATH
   ```
 ## box world 생성하기 
 
@@ -35,14 +33,14 @@
   ```
 - Box link 추가 
 - box.world 형태로 저장 
-  - 저장 위치 : ~/projects/Gazebo_Practice/5.move box/
+  - 저장 위치 : ~/project/moveBox/
   ![](./boxWorld.png)
 
 ## world 파일에 플러그인 추가하기 
 
 - VSC로 box.world 열기 
   ```bash
-   > cd ~/projects/Gazebo_Practice/5.move box/
+   > cd ~/project/moveBox/
    > code ./box.world
   ```
 - model element 내에 plugin 추가
@@ -55,7 +53,7 @@
 
 ## box world 실행 
   ```bash
-  > cd  ~/projects/Gazebo_Practice/5.move box/
+  > cd  ~/project/moveBox/
   > gazebo ./box.world
   ```
 
