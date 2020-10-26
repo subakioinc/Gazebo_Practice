@@ -20,7 +20,7 @@
 
 ## 코드로 무중력 world 구현하기 
 - [Gazebo World Class API 참조](https://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgazebo_1_1physics_1_1World.html#details)
-- [Vector3d](hhttps://osrf-distributions.s3.amazonaws.com/ign-math/api/1.0.0/namespaceignition_1_1math.html#ab83a49e267aac56fb5c8d958c964c026)
+- [Vector3d](https://osrf-distributions.s3.amazonaws.com/ign-math/api/1.0.0/namespaceignition_1_1math.html#ab83a49e267aac56fb5c8d958c964c026)
 - Load 함수 
     - setGravity()
 
