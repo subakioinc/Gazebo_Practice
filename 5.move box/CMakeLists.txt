@@ -8,9 +8,8 @@ list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 add_library(move_box SHARED move_box.cpp)
 target_link_libraries(move_box ${GAZEBO_LIBRARIES})
 
-# add_library(move_box_sub SHARED move_box_sub.cpp)
-# target_link_libraries(move_box_sub ${GAZEBO_LIBRARIES})
+# add_library(stop_box SHARED stop_box.cpp)
+# target_link_libraries(stop_box ${GAZEBO_LIBRARIES})
 
 # add_executable(stop stop.cpp)
 # target_link_libraries(stop ${GAZEBO_LIBRARIES})
-
