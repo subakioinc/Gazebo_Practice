@@ -14,24 +14,18 @@
 ## build 방법 
 - build 디렉토리 생성
 ```bash
-> cd ~/projects/Gazebo_Practice/1.hello_plugin/
-> mkdir build 
-```    
-- Plugin 빌드
-```bash
+> cd ~/projects/hello_plugin
 > cd build
 > cmake ..
 > make
 ```
 ## 환경변수 설정
-- export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PX4_Simulation}/demo/velodyne_plugin/build
- export GAZEBO_PLUGIN_PATH=$HOME/projects/Gazebo_Practice/1.hello_plugin/build:$GAZEBO_PLUGIN_PATH 
 ```bash
-> export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)
+> export GAZEBO_PLUGIN_PATH=$HOME/projects/hello_plugin/build:$GAZEBO_PLUGIN_PATH 
 ```
 ## 실행 
 ```bash
-> cd ~/projects/Gazebo_Practice/1.hello_plugin
+> cd ~/projects/hello_plugin
 > gzserver --verbose ./hello.world
 ```
 
