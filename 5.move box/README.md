@@ -28,3 +28,25 @@
   ```bash
   > export GAZEBO_PLUGIN_PATH=$HOME/projects/Gazebo_Practice/5.move box/build:$GAZEBO_PLUGIN_PATH
   ```
+## box world 생성하기 
+
+- Gazebo 실행
+  ```bash
+    > gazebo 
+  ```
+- Box link 추가 
+- box.world 형태로 저장 
+  - 저장 위치 : ~/projects/Gazebo_Practice/5.move box/
+
+## world 파일에 플러그인 추가하기 
+
+- VSC로 box.world 열기 
+  ```bash
+   > cd ~/projects/Gazebo_Practice/5.move box/
+   > code ./box.world
+  ```
+- model element 내에 plugin 추가
+  - model name ='unit_box'
+  - 추가 sdf :
+    <plugin name="move_box" filename="libmove_box.so"/>
+
