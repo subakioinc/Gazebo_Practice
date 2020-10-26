@@ -18,7 +18,6 @@
   > mkdir build
   ```
 - build 
-
   ```bash
   > cd build
   > cmake ..
@@ -54,8 +53,10 @@
   ```
   ![](./boxWorldSDF.png)
 
-## box.world 실행 
-```bash
-> cd  ~/projects/Gazebo_Practice/5.move box/
-> gazebo ./box.world
-```
+## box world 실행 
+  ```bash
+  > cd  ~/projects/Gazebo_Practice/5.move box/
+  > gazebo ./box.world
+  ```
+
+
